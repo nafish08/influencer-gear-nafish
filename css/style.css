@@ -2,3 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto:wght@100&family=Yeseva+One&display=swap');
 
 /* Utilities */
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px;
+    margin-top: 70px;
+}
+.site-title p{
+    font-size: 24px;
+    font-weight: bold;
+    font-feature-settings: "liga" off;
+    color: #3A3A3A;
+    
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menus ul {
+    display: flex;
+    list-style-type: none;
+}
+.menus ul li{
+    margin-left: 34px;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+.shopping-cart-icon img{
+    margin-left: 34px;
+    width: 36px;
+    height: 36px;
+    color: #3A3A3A;
+}
