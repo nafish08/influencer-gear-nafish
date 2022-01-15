@@ -333,9 +333,11 @@
 @media screen and (max-width: 767px) {
     .top-container{
         flex-direction: column;
-        width: 300px;
         height: auto;
+        justify-content: center;
     }
+
+    /* Navigation Bar */
     .navigation-bar{
         flex-direction: column;
         margin: 5px;
@@ -372,8 +374,8 @@
     .menu-container .shopping-cart-icon{
         position: absolute;
         top: 0;
-        margin-top: 10px;
-        margin-left: 160px;
+        right: 0;
+        margin: 10px;
     }
 
     /* Intro Section */
@@ -387,7 +389,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 20px;
     }
     .intro-section-child h1{
         font-size: 25px;
@@ -404,7 +405,7 @@
         margin-top: 50px;
     }
 
-
+    /* Logo Section */
     .logo-container{
         width: 100%;
         margin: auto;
@@ -414,22 +415,30 @@
         align-items: center;
         margin-top: 120px;
     }
-
-
-
-    /* Logo Section */
     .logos{
         grid-template-columns: repeat(1, 1fr);
     }
+
+
     /* Cart Section */
     .main-container{
         width: 400px;
     }
     .main-container .carts{
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    .see-more-btn{
+        text-align: center;
+    }
+
     /* Bottom Container */
     .features{
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
