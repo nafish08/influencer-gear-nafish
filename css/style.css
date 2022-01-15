@@ -299,7 +299,6 @@
 /* For Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    /* Navigation Bar */
     .top-container{
         display: flex;
         flex-direction: column;
@@ -332,27 +331,100 @@
 
 /* For Smartphone */
 @media screen and (max-width: 767px) {
-
-    /* Navigation Bar */
     .top-container{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        row-gap: 120px;
+        width: 300px;
+        height: auto;
     }
+    .navigation-bar{
+        flex-direction: column;
+        margin: 5px;
+        margin-top: 50px;
+    }
+    .site-title p{
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        margin-top: 10px;
+    }
+    .menus ul{
+        flex-direction: column;
+        padding-left: 0;
+        text-align: center;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .menus ul li{
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    .menus ul li:hover{
+        background-color: #E02C6D;
+        color: white;
+        transition: background-color 1s;
+    }
+    .menu-container{
+        flex-direction: column;
+    }
+    .menu-container .shopping-cart-icon{
+        position: absolute;
+        top: 0;
+        margin-top: 10px;
+        margin-left: 160px;
+    }
+
     /* Intro Section */
     .intro-section{
         flex-direction: column;
-        row-gap: 120px;
-        margin-top: 100px;
-        margin-bottom: 120px;
+        margin-top: 120px;
     }
+    .intro-section-child{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .intro-section-child h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .preebook-now-btn{
+        position: relative;
+    }
+    .bg-image #top-image{
+        width: 80%;
+    }
+    .bg-image{
+        background-size: 90%;
+        margin-top: 50px;
+    }
+
+
+    .logo-container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+    }
+
+
 
     /* Logo Section */
     .logos{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     /* Cart Section */
+    .main-container{
+        width: 400px;
+    }
     .main-container .carts{
         grid-template-columns: repeat(1, 1fr);
     }
